@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Farrell Alexander</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+    </div>
+  </nav>  
+  <nav id="hamburger-nav">
+    <div class="logo">Farrell Alexander</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="togglemenu()">
+        <span></span>
+        <span></span>
+        <span></span>   
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="togglemenu()">About</a></li>
+            <li><a href="#experience" onclick="togglemenu()">Expirience</a></li>
+            <li><a href="#project" onclick="togglemenu()">Projects</a></li>
+            <li><a href="#contacts" onclick="togglemenu()">Contact</a></li>   
+        </div>
+    </div>
+
+  </nav>
+  <section id="profile">
+    <div class="section_pic-container">
+    <img src="./assets/Untitled__1_-removebg-preview.png" alt="FA Profile picture">
+    </div>
+    <div class="section_text">
+    <p class="section_text_p1">Hello, I'm</p>
+    <h1 class="title">Farrell Alexander Hasudungan Komansilan</h1>
+    <p class="section_text_p2">Information System Student</p>
+    <div class="btn-container">
+        <button class="btn btn-color-2" ><a href="./assets/resume-example.pdf">Download CV</a>
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contact Info
+        </button>
+    </div>
+    <div id="social-container">
+        <img src="./assets/linkedin.png" alt="My Linkedin profile"
+        class="icon" onclick="location.href='https://www.linkedin.com/in/farrell-alexander-833744256'"
+        />
+        <img src="./assets/github.png" alt="My Github profile"
+        class="icon" onclick="location.href='https://https://github.com/FarrellAlexander/html-css-js-portfolio.git'"
+        />
+    </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/Untitled__1_-removebg-preview.png" 
+            alt="Profile picture"
+            class="about-pic"
+            />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png"
+                    alt="expirience icon"
+                    class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <br>
+                    <p>2+ years <br>
+                        Frontend Development</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png"
+                    alt="education icon"
+                    class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>- Undergraduate Student of 
+                    Information Systems at BINUS University</p>
+                    <p>Bachelor's degree, Information Systems
+                        Feb 2022 - Jul 2026</p>
+                        <br>
+                    <p>- Ichthus International School Jakarta</p>
+                    <p>  High School Diploma, Social Sciences</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p> I'm a 5th-semester university student majoring in Information Systems. I enjoy working in groups, which has enhanced your leadership and communication abilities. I have developed strong skills in front-end programming languages such as HTML, CSS, and JavaScript, and you are proficient in design software like Figma. I'm passionate about front-end development and strive to 
+                    use my skills to create exceptional
+                    user experiences for both websites and mobile apps.
+                </p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='./#skills'"/>
+  </section>
+  <section id="skills">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-details-container">
+        <div class="about-containers">
+            <div class="details-containers">
+                <h2 class="skills-sub-title">Frontend Development</h2>
+                <div class="article-container"></div>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Expirience 
+                    icon"
+                    class="icon"
+                    />
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Expirience 
+                    icon"
+                    class="icon"
+                    />
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Expirience 
+                    icon"
+                    class="icon"
+                    />
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Expirience 
+                    icon"
+                    class="icon"
+                    />
+                    <div>
+                        <h3>User Interface Design</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
